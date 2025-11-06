@@ -23,13 +23,6 @@ body{
     background-color: hsl(212, 45%, 89%);
     padding-inline: 1.5rem;
 }
-
-/* - White: hsl(0, 0%, 100%)
-
-- Slate 300: hsl(212, 45%, 89%)
-- Slate 500: hsl(216, 15%, 48%)
-- Slate 900: hsl(218, 44%, 22%) */
-
 .qr_code-component{
     padding: 1rem;
     background-color: hsl(0, 0%, 100%);
@@ -56,18 +49,38 @@ body{
 .qr_code-desc{
     text-align: center;
 }
+.attribution {
+    font-size: 0.688rem; 
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
 
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 23.438rem) {
     .qr_code-component{
-        max-width: 350px;
+        max-width: 327.2px;
+    }
+    .qr_code-image{
+        margin-block-end: 1rem;
+        border-radius: 10px;
     }
     .qr_code-title{
-        font-size: 25px;
+        font-size: 24px;
+        padding-block-end: 1rem;
+
     }
     .qr_code-desc{
         font-size: 15px;
+        line-height: 1.4;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        /* padding-block-end: 1.5rem; */
     }
-
-    
+    .attribution{
+        font-size: 0.75rm;
+    }
 }
