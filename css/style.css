@@ -33,7 +33,7 @@ body{
     margin-block-end: 1.5rem;
 }
 .qr_code-title{
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
     padding-block-end: 0.7rem;
@@ -42,7 +42,7 @@ body{
     font-weight: 400;
     color: hsl(216, 15%, 48%);
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-block-end: 1rem;
 }
 .qr_code-title,
@@ -63,24 +63,22 @@ body{
 
 @media screen and (min-width: 23.438rem) {
     .qr_code-component{
-        max-width: 327.2px;
+        max-width: 20.45rem;
     }
     .qr_code-image{
         margin-block-end: 1rem;
         border-radius: 10px;
     }
     .qr_code-title{
-        font-size: 24px;
+        font-size: 1.5rem;
         padding-block-end: 1rem;
-
     }
     .qr_code-desc{
-        font-size: 15px;
+        font-size: 0.93rem;
         line-height: 1.4;
         padding: 0 1.5rem 1.5rem 1.5rem;
-        /* padding-block-end: 1.5rem; */
     }
     .attribution{
-        font-size: 0.75rm;
+        font-size: 0.75rem;
     }
 }
