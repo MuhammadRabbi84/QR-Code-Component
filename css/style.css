@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: "Outfit"  ,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(212, 45%, 89%);
+    padding-inline: 1.5rem;
+}
+
+/* - White: hsl(0, 0%, 100%)
+
+- Slate 300: hsl(212, 45%, 89%)
+- Slate 500: hsl(216, 15%, 48%)
+- Slate 900: hsl(218, 44%, 22%) */
+
+.qr_code-component{
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 14px;
+}
+.qr_code-image{
+    border-radius: 8px;
+    margin-block-end: 1.5rem;
+}
+.qr_code-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    padding-block-end: 0.7rem;
+}
+.qr_code-desc{
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    line-height: 1.5;
+    font-size: 14px;
+    padding-block-end: 1rem;
+}
+.qr_code-title,
+.qr_code-desc{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 375px) {
+    .qr_code-component{
+        max-width: 350px;
+    }
+    .qr_code-title{
+        font-size: 25px;
+    }
+    .qr_code-desc{
+        font-size: 15px;
+    }
+
+    
+}
